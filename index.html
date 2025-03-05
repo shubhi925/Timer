@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="w-screen h-screen bg-gray-700 flex justify-center items-center">
+      <div
+        class="bg-gray-900 w-96 h-2/3 rounded-lg flex flex-col justify-around items-center py-6 text-white"
+      >
+        <h1 class="text-5xl">Timer</h1>
+        <div
+          class="text-center text-8xl flex justify-center items-center gap-2"
+        >
+          <div>
+            <input
+              type="text"
+              placeholder="00"
+              class="minutes w-26 focus:outline-none"
+            />
+          </div>
+          <div class="text-7xl">:</div>
+          <div>
+            <input
+              type="text"
+              placeholder="00"
+              class="seconds w-26 focus:outline-none"
+            />
+          </div>
+        </div>
+        <div class="flex gap-3">
+          <button
+            class="resetBtn border border-white rounded-md py-2 px-4 hover:cursor-pointer"
+          >
+            Reset
+          </button>
+          <button
+            class="startBtn border border-white rounded-md py-2 px-4 hover:cursor-pointer"
+          >
+            Start
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
